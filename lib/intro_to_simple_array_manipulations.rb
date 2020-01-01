@@ -33,22 +33,16 @@ list_of_programming_languages = ["Ruby", "JavaScript", "Java", "C#", "Objective 
 end
 
     haircuts = ["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler", "Bob"]
-    new_array = using_uniq(haircuts)
-    expect(new_array).to eq(["Pixie", "Bob", "Mohawk", "Crew Cut", "Linka", "Wheeler"])
-  end
+    haircats.uniq
 end
 
-describe "using_flatten" do 
-  it "takes in an argument of an array that contains other arrays and uses the flatten method to return an array of strings" do 
+
      instruments = ["Saxophone", ["Piano", "Trumpet"], "Violin", "Drums", "Flute"]
-     flat_array = using_flatten(instruments)
-     expect(flat_array).to eq(["Saxophone", "Piano", "Trumpet", "Violin", "Drums", "Flute"])
-  end
+     instruments.flatten[1,2]
 end
 
 
-describe "using_delete" do 
-  it "takes in two arguments, an array and a string, and uses the delete method to remove any items from the array that are equal to that string" do
+
     instructors = ["Josh", "Steven", "Sophie", "Steven", "Amanda", "Steven"]
     no_offense_steven = using_delete(instructors, "Steven")
     expect(instructors).not_to include("Steven")
